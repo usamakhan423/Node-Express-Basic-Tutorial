@@ -1,0 +1,15 @@
+doctype html
+html
+  title #{title}
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  body
+    .text-center
+      h1.h1.py-4 Simple Login Form
+    div.container.text-center.w-25
+      form(method='POST', action="/form_submit")
+        .form-group
+          input(type='text', name='username', value='', placeholder="Username...")
+        .form-group
+          input(type='text', name='email', value='', placeholder="Email...")
+        .form-group
+          input(type='submit',, value='Submit')
